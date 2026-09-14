@@ -1,0 +1,225 @@
+/* =========================================
+   ESTILOS GENERALES
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eef1f4;
+    color: #20252b;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+.site-header {
+    background-color: #182433;
+    color: white;
+    padding: 45px 0;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.4em;
+}
+
+.site-header p {
+    margin: 10px 0 0;
+    font-size: 1.1em;
+}
+
+
+/* =========================================
+   NAVEGACIÓN
+   ========================================= */
+
+.site-nav {
+    background-color: #26384d;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.site-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.site-nav a:hover {
+    background-color: #3d5875;
+}
+
+
+/* =========================================
+   SECCIONES
+   ========================================= */
+
+.content-section {
+    background-color: white;
+    margin: 25px 0;
+    padding: 30px;
+    border: 1px solid #d8dde2;
+    border-radius: 6px;
+}
+
+.content-section h2 {
+    margin-top: 0;
+    color: #182433;
+    font-size: 1.9em;
+    border-bottom: 2px solid #8b9aaa;
+    padding-bottom: 8px;
+}
+
+.content-section h3 {
+    color: #34495e;
+}
+
+.content-section p {
+    margin: 15px 0;
+}
+
+.content-section ul {
+    padding-left: 25px;
+}
+
+
+/* =========================================
+   CAJA DE INFORMACIÓN
+   ========================================= */
+
+.info-box {
+    background-color: #e8edf2;
+    border-left: 5px solid #34495e;
+    padding: 18px;
+    margin: 25px 0;
+}
+
+.info-box h3 {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   GALERÍA
+   ========================================= */
+
+.gallery-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 31.5%;
+    margin: 0 1.5% 25px 0;
+    padding: 10px;
+    background-color: #f5f6f7;
+    border: 1px solid #d5d9dd;
+}
+
+.gallery-item:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-item figcaption {
+    padding: 10px 5px 2px;
+    font-size: 0.9em;
+    color: #4a535c;
+}
+
+
+/* =========================================
+   VIDEO
+   ========================================= */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* =========================================
+   CITA
+   ========================================= */
+
+.quote {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f2f4;
+    border-left: 5px solid #182433;
+    font-style: italic;
+}
+
+.quote p {
+    margin: 0;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+   ========================================= */
+
+.site-footer {
+    background-color: #182433;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+
+/* =========================================
+   AJUSTES FLUIDOS
+   ========================================= */
+
+@supports (width: 100%) {
+    .site-header h1 {
+        font-size: clamp(1.7em, 5vw, 2.4em);
+    }
+
+    .content-section {
+        padding: 3%;
+    }
+}
